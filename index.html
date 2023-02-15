@@ -64,7 +64,7 @@ quotes=[
 
 const INTERVAL = 86400000;
 
-function displayQuote(){
+function dispalyQuote(){
 
     document.getElementById('widget').innerHTML =quotes[0];
     quotes.forEach((quote, i) => {
@@ -74,11 +74,11 @@ function displayQuote(){
     });
     }
 
-    function displayWidget() {
-        displayQuote();
-        setTimeout(displayWidget, quotes.length*INTERVAL);
+    function dispalyWidget() {
+        dispalyQuote();
+        setTimeout(dispalyWidget, quotes.length*INTERVAL);
     }
-    displayWidget()
+    dispalyWidget()
 
 </script>
 
